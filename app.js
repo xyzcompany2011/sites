@@ -5,6 +5,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('searchInput');
     const resultsContainer = document.getElementById('resultsContainer');
 
+    if (!searchForm || !searchInput || !resultsContainer) {
+        console.warn('Search elements missing: add #searchForm, #searchInput and #resultsContainer to the page.');
+        return;
+    }
+
     searchForm.addEventListener('submit', async (event) => {
         event.preventDefault();
         const query = searchInput.value.trim();
