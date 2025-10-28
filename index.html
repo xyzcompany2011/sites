@@ -76,6 +76,21 @@
             --hero-height: 70vh;
         }
 
+        /* added: border + shadow for welcome modal banner */
+        #welcomeModal .modal-content {
+            background: transparent;
+            border: none;
+        }
+
+        #welcomeModal .modal-body img {
+            display: block;
+            width: 100%;
+            border: 8px solid #fff;
+            /* change color if needed */
+            border-radius: 8px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+        }
+
 
         .hero {
             height: var(--hero-height);
@@ -568,7 +583,7 @@
                     </ul>
                 </div>
                 <div class="col-md-6">
-                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=60"
+                    <img src="https://starinnkyari.netlify.app/images/bg/resort-banner.jpg"
                         class="img-fluid rounded" alt="about">
                 </div>
             </div>
@@ -671,6 +686,21 @@
     </div>
 
 
+    <!-- Welcome banner modal (shows on page load for 5s) -->
+    <div class="modal fade" id="welcomeModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0">
+                <button type="button" class="btn-close position-absolute m-3 end-0" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+                <div class="modal-body p-0">
+                    <img src="https://starinnkyari.netlify.app/images/bg/resort-banner.jpg"
+                        alt="Welcome to STARINN Kyari Resort" class="img-fluid w-100" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!-- FOOTER -->
     <footer class="py-4">
         <div class="container d-md-flex justify-content-between align-items-center">
@@ -767,6 +797,21 @@
                 autoplayVideos: false
             });
         });
+
+
+
+        // show welcome banner modal on page load and auto-hide after 5s
+        document.addEventListener('DOMContentLoaded', function () {
+            var welcomeEl = document.getElementById('welcomeModal');
+            if (!welcomeEl) return;
+            var welcomeModal = new bootstrap.Modal(welcomeEl, { backdrop: true, keyboard: true });
+            welcomeModal.show();
+            // hide after 5 seconds
+            setTimeout(function () {
+                try { welcomeModal.hide(); } catch (e) { /* ignore */ }
+            }, 5000);
+        });
+
     </script>
 
     <!-- ...existing code... -->
