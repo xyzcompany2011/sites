@@ -1,0 +1,17 @@
+{
+    "documents": [
+        {
+            "title": "STARINN KYARI JUNGLE RESORT",
+            "description": "STARINN KYARI JUNGLE RESORT is a resort located in Village Kyari, Jim Corbett National Park, in the Nainital district of Uttarakhand, India. It is a unit of Star Inn Suites and Retreat Ltd.",
+            "activities": [
+                "indoor activities",
+                "outdoor activities"
+            ],
+            "company": {
+                "name": "Star Inn Suites and Retreat Ltd",
+                "services": "The company provides holiday products and experiences through a network of resorts, hotels, and clubs in India and internationally.",
+                "packages": "They offer various packages and have tie-ups with numerous resorts globally."
+            }
+        }
+    ]
+}
