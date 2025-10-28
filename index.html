@@ -8,7 +8,7 @@
 
     <!-- ✅ SEO Meta Tags -->
     <meta name="description"
-        content="Experience wildlife, luxury, and tranquility at StarInn Kyari Jungle Resort near Jim Corbett National Park. Book your stay for an unforgettable jungle getaway with premium rooms, safaris, and nature walks.">
+        content="Experience wildlife, luxury, and tranquility at StarInn Kyari Jungle Resort near Jim Corbett National Park. Book your stay for an unforgettable jungle getaway with premium rooms, safaris, and nature walks. Find us on Google Maps: https://www.google.com/maps?q=29.3680150,79.1850280">
     <meta name="keywords"
         content="Jim Corbett resort, Kyari village resort, StarInn resort, jungle resort Corbett, wildlife stay, luxury resort Uttarakhand, eco resort India">
     <meta name="author" content="StarInn Kyari Jungle Resort">
@@ -58,6 +58,8 @@
   },
     "telephone": "011-4909-8176",
     "url": "https://starinnkyari.netlify.app/",
+    "email": "info@starinnkyari.com",
+    "hasMap": "https://www.google.com/maps?q=29.3680150,79.1850280",
     "priceRange": "₹3,499 - ₹14,999 per night",
   }
   </script>
@@ -594,6 +596,24 @@
                         </div>
                         <button class="btn btn-primary">Send Message</button>
                     </form>
+                    <hr />
+                    <section id="contact2" class="py-5 bg-light">
+                        <div class="container text-center">
+                            <h2 class="h3 mb-3">StarInn Kyari Jungle Resort</h2>
+                            <p>Kyari Village, Near Jim Corbett National Park, Uttarakhand</p>
+
+                            <div class="d-flex justify-content-center gap-2 mt-3">
+                                <a href="https://www.google.com/maps?q=29.3680150,79.1850280" class="btn btn-success"
+                                    target="_blank" rel="noopener">📍 Get Directions</a>
+
+                                <!-- Location icon that opens popup modal -->
+                                <button class="btn btn-outline-primary" type="button" data-bs-toggle="modal"
+                                    data-bs-target="#locationModal" aria-label="Open location">
+                                    <i class="bi bi-geo-alt"></i> View Map
+                                </button>
+                            </div>
+                        </div>
+                    </section>
                 </div>
                 <div class="col-lg-6">
                     <div class="card p-3 shadow-sm">
@@ -617,6 +637,39 @@
             </div>
         </div>
     </section>
+
+
+
+    <!-- CONTACT -->
+
+
+    <!-- Location modal -->
+    <div class="modal fade" id="locationModal" tabindex="-1" aria-labelledby="locationModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="locationModalLabel">StarInn Kyari Jungle Resort — Location</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <!-- responsive iframe -->
+                    <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+                        <iframe src="https://www.google.com/maps?q=29.3680150,79.1850280&z=15&output=embed"
+                            style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-success" href="https://www.google.com/maps?q=28.5836037,77.3578967"
+                        target="_blank" rel="noopener">
+                        Open in Google Maps
+                    </a>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- FOOTER -->
     <footer class="py-4">
