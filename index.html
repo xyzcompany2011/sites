@@ -1,517 +1,632 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
-<!-- Mirrored from html.awaikenthemes.com/the-grand-hotel-and-resort-site-template/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 12 Oct 2025 03:08:23 GMT -->
-
 <head>
-	<!-- Meta -->
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="">
-	<meta name="keywords" content="">
-	<meta name="author" content="Awaiken Theme">
-	<!-- Page Title -->
-	<title>The Grand Hotel and Resort Site Template</title>
-	<!-- Google Fonts css-->
-	<link
-		href="https://fonts.googleapis.com/css?family=Berkshire+Swash%7CPoppins:300,400,500,600,700%7CSaira+Semi+Condensed:400,500,600,700,800,900"
-		rel="stylesheet">
-	<!-- Bootstrap css -->
-	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-	<!-- Font Awesome icon css-->
-	<link href="css/font-awesome.min.css" rel="stylesheet" media="screen">
-	<!-- Carousel css -->
-	<link rel="stylesheet" href="css/owl.carousel.css">
-	<!-- Magnific Popup CSS -->
-	<link href="css/magnific-popup.css" rel="stylesheet">
-	<!-- Slick nav css -->
-	<link rel="stylesheet" href="css/slicknav.css">
-	<!-- Main custom css -->
-	<link href="css/custom.css" rel="stylesheet" media="screen">
-	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>STARINN Kyari Resort — JIM Corbett</title>
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <style>
+        :root {
+            --hero-height: 70vh;
+        }
+
+
+        .hero {
+            height: var(--hero-height);
+            background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('https://images.unsplash.com/photo-1501117716987-c8e6f2d9f7a5?auto=format&fit=crop&w=1600&q=60') center/cover no-repeat;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+
+        .navbar-brand img {
+            height: 45px;
+            margin-right: 10px;
+        }
+
+
+        .room-card img {
+            height: 180px;
+            object-fit: cover;
+        }
+
+
+        .facility-icon {
+            font-size: 1.6rem;
+        }
+
+
+        .gallery img {
+            height: 220px;
+            object-fit: cover;
+            width: 100%;
+        }
+
+
+        footer {
+            background: #0b2545;
+            color: #fff;
+        }
+    </style>
 </head>
 
-<body data-spy="scroll" data-target="#navigation" data-offset="70">
-	<!-- Preloader starts -->
-	<div class="preloader">
-		<div class="browser-screen-loading-content">
-			<div class="loading-dots dark-gray">
-				<i></i>
-				<i></i>
-				<i></i>
-				<i></i>
-			</div>
-			<p class="loading-text">Loading</p>
-		</div>
-	</div>
-	<!-- Preloader Ends -->
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="100" tabindex="0">
 
-	<!-- Header Section Starts-->
-	<header>
-		<nav id="main-nav" class="navbar navbar-default navbar-fixed-top">
-			<div class="container">
-				<div class="navbar-header">
-					<!-- Logo starts -->
-					<a class="navbar-brand" href="#">
-						<img src="images/logo.png" alt="Logo" />
-					</a>
-					<!-- Logo Ends -->
+    <!-- NAVBAR -->
+    <!-- NAVBAR -->
+    <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="https://starinnsuitesandretreat.com/wp-content/uploads/2018/10/logo-light-1.png"
+                    alt="STARINN Kyari Resort Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navCollapse">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#rooms">Rooms</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#facilities">Facilities</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <button class="btn btn-outline-warning ms-3" data-bs-toggle="modal" data-bs-target="#bookingModal">Book
+                    Now</button>
+            </div>
+        </div>
+    </nav>
 
-					<!-- Responsive Menu button starts -->
-					<div class="navbar-toggle">
-					</div>
-					<!-- Responsive Menu button Ends -->
-				</div>
-
-				<div id="responsive-menu"></div>
-
-				<!-- Navigation starts -->
-				<div class="navbar-collapse collapse" id="navigation">
-					<ul class="nav navbar-nav navbar-right main-navigation" id="main-menu">
-						<li class="active"><a href="#home">Home</a></li>
-						<li><a href="#about">About</a></li>
-						<li><a href="#services">Services</a></li>
-						<li><a href="#rooms">Rooms</a></li>
-						<li><a href="#photogallery">Photo Gallery</a></li>
-						<li><a href="#contact">Contact us</a></li>
-					</ul>
-				</div>
-				<!-- Navigation Ends -->
-			</div>
-		</nav>
-	</header>
-	<!-- Header Section Ends-->
-
-	<!-- Banner Section Starts -->
-	<section class="banner" id="home">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="offter-container">
-						<div class="banner-offter-box">
-							<h2>Booking Now & Get <span>50% off</span></h2>
-							<p>There are many variations of passages of Lorem Ipsum available, but the majority have
-								suffered alteration in some form, by injected humour, or randomised words which don't
-								look even slightly believable.</p>
-							<a href="#" class="btn-custom">Book Now</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Banner Section Ends -->
-
-	<!-- About section starts -->
-	<section class="aboutus" id="about">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-5">
-					<div class="aboutus-image">
-						<img src="images/bg/image13.jpeg" alt="" />
-					</div>
-				</div>
-
-				<div class="col-md-7">
-					<div class="aboutus-content">
-						<div class="main-title">
-							<h2>About The STARINN Resort</h2>
-							<p>Short Tagline goes here</p>
-						</div>
-
-						<div class="aboutus-entry">
-							<p>We believe customers are the bedrock of our business. Our mission is to serve our
-								customers with high-quality holiday products and experiences they can cherish for the
-								rest of their lives.
-							</p>
-							<p>A full range of our specialty services includes member exclusive clubbing hubs, splendid
-								holiday destinations, state-of-the-art fitness centers, and star-studded entertainment
-								events. Give us a chance to delight you with our offerings. Our massive network consists
-								of social clubs in urban hotspots, city-centric luxurious hotels, serene wellness
-								rejuvenation hubs, beachfront resorts, hilltop vacation homes, wildlife jungle lodges,
-								and water amusement parks. Also, the network frequently organizes various family
-								amusement events including Live Musical Nights, Food Festivals, Magic Shows and Tambola.
-							</p>
+    <!-- <header id="home" class="hero text-center" data-aos="fade-in" data-aos-duration="1500" style="background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+          url('https://media.giphy.com/media/l0MYEqEzwMWFCg8rm/giphy.gif') center/cover no-repeat;">
+        <div class="container">
+            <h1 class="display-4 fw-bold" data-aos="zoom-in" data-aos-delay="200">Welcome to Star Resort</h1>
+            <p class="lead" data-aos="fade-up" data-aos-delay="400">Luxury suites, peaceful retreats & unforgettable
+                experiences</p>
+            <div class="mt-4" data-aos="fade-up" data-aos-delay="600">
+                <a class="btn btn-warning btn-lg me-2" href="#rooms">View Rooms</a>
+                <a class="btn btn-outline-light btn-lg" href="#facilities">Explore Facilities</a>
+            </div>
+        </div>
+    </header> -->
 
 
-							<div class="about-social">
-								<a href="#"><i class="fa fa-facebook"></i></a>
-								<a href="#"><i class="fa fa-twitter"></i></a>
-								<a href="#"><i class="fa fa-linkedin"></i></a>
-								<a href="#"><i class="fa fa-instagram"></i></a>
-								<a href="#"><i class="fa fa-google-plus"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- About section ends -->
-
-	<!-- Services section starts -->
-	<section class="services" id="services">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="main-title">
-						<h2>Our services</h2>
-					</div>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-md-6">
-					<div class="service-single left-service">
-						<div class="service-image">
-							<figure>
-								<img src="images/service-1.jpg" alt="" />
-							</figure>
-						</div>
-
-						<div class="service-content">
-							<h3>Luxury Suites & Room</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices malesuada ante
-								quis pharetra. Nullam non bibendum dolor.</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-6">
-					<div class="service-single left-service">
-						<div class="service-image">
-							<figure>
-								<img src="images/service-2.jpg" alt="" />
-							</figure>
-						</div>
-
-						<div class="service-content">
-							<h3>Swiming pool</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices malesuada ante
-								quis pharetra. Nullam non bibendum dolor.</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-6">
-					<div class="service-single right-service">
-						<div class="service-image">
-							<figure>
-								<img src="images/service-3.jpg" alt="" />
-							</figure>
-						</div>
-
-						<div class="service-content">
-							<h3>Restaurants</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices malesuada ante
-								quis pharetra. Nullam non bibendum dolor.</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-6">
-					<div class="service-single right-service">
-						<div class="service-image">
-							<figure>
-								<img src="images/service-4.jpg" alt="" />
-							</figure>
-						</div>
-
-						<div class="service-content">
-							<h3>Best Facility</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices malesuada ante
-								quis pharetra. Nullam non bibendum dolor.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Services section ends -->
+    <!-- HERO -->
 
 
-	<!-- Room Section starts -->
-	<section class="rooms" id="rooms">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="main-title">
-						<h2>Rooms</h2>
-					</div>
-				</div>
-			</div>
+    <header id="home" class="hero text-center">
+        <!-- video background (muted, autoplay, loop) -->
+        <video autoplay muted loop playsinline
+            style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;">
+            <source
+                src="https://starinnsuitesandretreat.com/wp-content/uploads/2018/10/final_5fd4bee3a4c88000ebc2f24e_752964.mp4"
+                type="video/mp4">
+            <!-- fallback image -->
+        </video>
 
-			<div class="row">
-				<div class="col-md-4 col-sm-6">
-					<div class="room-single">
-						<div class="room-image">
-							<figure>
-								<img src="images/room-1.jpg" alt="" />
-							</figure>
-						</div>
+        <!-- overlay content -->
+        <div class="container" style="position:relative;z-index:1;">
+            <h1 class="display-4 fw-bold" data-aos="zoom-in" data-aos-delay="200">Welcome to STARINN Kyari Resort</h1>
+            <p class="lead" data-aos="fade-up" data-aos-delay="400">Luxury suites, peaceful retreats & unforgettable
+                experiences</p>
+            <div class="mt-4" data-aos="fade-up" data-aos-delay="600">
+                <a class="btn btn-warning btn-lg me-2" href="#rooms">View Rooms</a>
+                <a class="btn btn-outline-light btn-lg" href="#facilities">Explore Facilities</a>
+            </div>
+        </div>
+    </header>
 
-						<div class="room-info">
-							<h3>Normal Room</h3>
-							<ul>
-								<li>Tea/Coffee maker</li>
-								<li>Air conditioning</li>
-								<li>Flat-screen TV</li>
-								<li>Wake-up service</li>
-							</ul>
-							<a href="#" class="btn-bookroom">Book Now</a>
-						</div>
-					</div>
-				</div>
 
-				<div class="col-md-4 col-sm-6">
-					<div class="room-single">
-						<div class="room-image">
-							<figure>
-								<img src="images/room-2.jpg" alt="" />
-							</figure>
-						</div>
 
-						<div class="room-info">
-							<h3>Normal Room</h3>
-							<ul>
-								<li>Tea/Coffee maker</li>
-								<li>Air conditioning</li>
-								<li>Flat-screen TV</li>
-								<li>Wake-up service</li>
-							</ul>
-							<a href="#" class="btn-bookroom">Book Now</a>
-						</div>
-					</div>
-				</div>
+    <!-- ROOMS -->
+    <section id="rooms" class="py-5">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 class="h3">Our Rooms & Suites</h2>
+                <small class="text-muted">Starting from ₹3,499/night</small>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card room-card shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=60"
+                            class="card-img-top" alt="Deluxe Room">
+                        <div class="card-body">
+                            <h5 class="card-title">Deluxe Room</h5>
+                            <p class="card-text">Comfortable 1-2 guests room with modern amenities and a cozy king bed.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <strong>₹3,499</strong> <small class="text-muted">/ night</small>
+                                </div>
+                                <div>
+                                    <button class="btn btn-sm btn-outline-primary me-2" data-bs-toggle="modal"
+                                        data-bs-target="#bookingModal">Reserve</button>
+                                    <a href="#" class="btn btn-sm btn-primary">Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-				<div class="col-md-4 col-sm-6">
-					<div class="room-single">
-						<div class="room-image">
-							<figure>
-								<img src="images/room-3.jpg" alt="" />
-							</figure>
-						</div>
+                <div class="col-md-4">
+                    <div class="card room-card shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=60"
+                            class="card-img-top" alt="Suite">
+                        <div class="card-body">
+                            <h5 class="card-title">Executive Suite</h5>
+                            <p class="card-text">Spacious suite with living area, balcony and premium amenities.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <strong>₹6,999</strong> <small class="text-muted">/ night</small>
+                                </div>
+                                <div>
+                                    <button class="btn btn-sm btn-outline-primary me-2" data-bs-toggle="modal"
+                                        data-bs-target="#bookingModal">Reserve</button>
+                                    <a href="#" class="btn btn-sm btn-primary">Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-						<div class="room-info">
-							<h3>Normal Room</h3>
-							<ul>
-								<li>Tea/Coffee maker</li>
-								<li>Air conditioning</li>
-								<li>Flat-screen TV</li>
-								<li>Wake-up service</li>
-							</ul>
-							<a href="#" class="btn-bookroom">Book Now</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Room Section ends -->
+                <div class="col-md-4">
+                    <div class="card room-card shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=60"
+                            class="card-img-top" alt="Villa">
 
-	<!-- Intro Video section start -->
-	<div class="intro-video">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="paly-button">
-						<a href="https://www.youtube.com/watch?v=ky0XSxkm5xE" class="popup-video">
-							<i class="fa fa-play"></i>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Intro Video section ends -->
+                        <div class="card-body">
+                            <h5 class="card-title">Private Villa</h5>
+                            <p class="card-text">Ideal for families — private pool, garden & dedicated butler service.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <strong>₹14,999</strong> <small class="text-muted">/ night</small>
+                                </div>
+                                <div>
+                                    <button class="btn btn-sm btn-outline-primary me-2" data-bs-toggle="modal"
+                                        data-bs-target="#bookingModal">Reserve</button>
+                                    <a href="#" class="btn btn-sm btn-primary">Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-	<!-- Photo Gallery Section starts -->
-	<section class="photo-gallery" id="photogallery">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="main-title">
-						<h2>Photo Gallery</h2>
-					</div>
-				</div>
-			</div>
+            </div>
+        </div>
+    </section>
 
-			<div class="row">
-				<div class="col-md-4 col-sm-6">
-					<div class="gallery-box">
-						<a href="images/photo-1.jpg"><img src="images/photo-1.jpg" alt="" /></a>
-					</div>
-				</div>
+    <!-- FACILITIES -->
+    <!-- <section id="facilities" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="h3 mb-4">Facilities & Experiences</h2>
+            <div class="row g-3">
+                <div class="col-md-3">
+                    <div class="card h-100 border-0">
+                        <div class="card-body text-center">
+                            <i class="bi bi-water facility-icon text-primary"></i>
+                            <h6 class="mt-2">Swimming Pool</h6>
+                            <p class="small text-muted">Infinity pool with poolside service.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100 border-0">
+                        <div class="card-body text-center">
+                            <i class="bi bi-geo-alt facility-icon text-primary"></i>
+                            <h6 class="mt-2">Guided Treks</h6>
+                            <p class="small text-muted">Local nature & culture exploration packages.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100 border-0">
+                        <div class="card-body text-center">
+                            <i class="bi bi-water facility-icon text-primary"></i>
+                            <h6 class="mt-2">Spa & Wellness</h6>
+                            <p class="small text-muted">Therapies, yoga & detox programs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100 border-0">
+                        <div class="card-body text-center">
+                            <i class="bi bi-calendar-event facility-icon text-primary"></i>
+                            <h6 class="mt-2">Events & Banquets</h6>
+                            <p class="small text-muted">Weddings, corporate meets & parties.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
 
-				<div class="col-md-4 col-sm-6">
-					<div class="gallery-box">
-						<a href="images/photo-2.jpg"><img src="images/photo-2.jpg" alt="" /></a>
-					</div>
-				</div>
 
-				<div class="col-md-4 col-sm-6">
-					<div class="gallery-box">
-						<a href="images/photo-3.jpg"><img src="images/photo-3.jpg" alt="" /></a>
-					</div>
-				</div>
+    <section id="facilities" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="h3 mb-4">Facilities & Experiences</h2>
+            <div class="row g-3">
+                <div class="col-md-3">
+                    <div class="card h-100 border-0">
+                        <div class="card-body text-center">
+                            <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=200&q=60"
+                                alt="Swimming Pool" class="mb-2 rounded-circle shadow-sm">
+                            <h6 class="mt-2">Swimming Pool</h6>
+                            <p class="small text-muted">Infinity pool with poolside service.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100 border-0">
+                        <div class="card-body text-center">
+                            <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=200&q=60"
+                                alt="Guided Treks" class="mb-2 rounded-circle shadow-sm">
+                            <h6 class="mt-2">Guided Treks</h6>
+                            <p class="small text-muted">Local nature & culture exploration packages.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100 border-0">
+                        <div class="card-body text-center">
+                            <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=200&q=60"
+                                alt="Spa & Wellness" class="mb-2 rounded-circle shadow-sm">
+                            <h6 class="mt-2">Spa & Wellness</h6>
+                            <p class="small text-muted">Therapies, yoga & detox programs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100 border-0">
+                        <div class="card-body text-center">
+                            <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=200&q=60"
+                                alt="Events & Banquets" class="mb-2 rounded-circle shadow-sm">
+                            <h6 class="mt-2">Events & Banquets</h6>
+                            <p class="small text-muted">Weddings, corporate meets & parties.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-				<div class="col-md-4 col-sm-6">
-					<div class="gallery-box">
-						<a href="images/photo-4.jpg"><img src="images/photo-4.jpg" alt="" /></a>
-					</div>
-				</div>
 
-				<div class="col-md-4 col-sm-6">
-					<div class="gallery-box">
-						<a href="images/photo-5.jpg"><img src="images/photo-5.jpg" alt="" /></a>
-					</div>
-				</div>
 
-				<div class="col-md-4 col-sm-6">
-					<div class="gallery-box">
-						<a href="images/photo-6.jpg"><img src="images/photo-6.jpg" alt="" /></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Photo Gallery Section ends -->
 
-	<!-- Mega Footer start -->
-	<section class="mega-footer" id="contact">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4 col-sm-4">
-					<div class="main-title">
-						<h2>Book Now</h2>
-						<p>Entery your Detail and Book Room</p>
-					</div>
+    <!-- GALLERY -->
+    <!-- <section id="gallery" class="py-5">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 class="h3">Gallery</h2>
+                <a href="#" class="small">View full gallery</a>
+            </div>
+            <div class="row g-3 gallery">
+                <div class="col-md-4"><img
+                        src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=900&q=60"
+                        class="rounded" alt=""></div>
+                <div class="col-md-4"><img
+                        src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=900&q=60"
+                        class="rounded" alt=""></div>
+                <div class="col-md-4"><img
+                        src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=900&q=60"
+                        class="rounded" alt=""></div>
+            </div>
+        </div>
+    </section> -->
 
-					<div class="booknow-form">
-						<form>
-							<div class="row">
-								<div class="col-md-6">
-									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Adults" />
-									</div>
-								</div>
 
-								<div class="col-md-6">
-									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Kids" />
-									</div>
-								</div>
+    <!-- GALLERY SECTION WITH LIGHTBOX -->
+    <section id="gallery" class="py-5 bg-light">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-4" data-aos="fade-up">
+                <h2 class="h3">Gallery</h2>
+                <a href="#" class="small text-decoration-none">View full gallery</a>
+            </div>
 
-								<div class="col-md-12">
-									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Arrival" />
-									</div>
-								</div>
+            <div class="row g-3 gallery">
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+                    <a href="https://media.gettyimages.com/id/909822024/photo/royal-bengal-tiger-on-forest-track-of-india.jpg?s=612x612&w=0&k=20&c=Lxb6yqXelDBEbLyFQ_DtH3134eKIkNLxe5nStgnTlFk="
+                        class="glightbox" data-gallery="resort-gallery" data-title="Jungle Safari View">
+                        <img src="https://media.gettyimages.com/id/909822024/photo/royal-bengal-tiger-on-forest-track-of-india.jpg?s=612x612&w=0&k=20&c=Lxb6yqXelDBEbLyFQ_DtH3134eKIkNLxe5nStgnTlFk="
+                            class="rounded w-100 shadow-sm" alt="Infinity Pool">
+                    </a>
+                </div>
 
-								<div class="col-md-12">
-									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Departure" />
-									</div>
-								</div>
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+                    <a href="https://media.gettyimages.com/id/1141985754/photo/loner-stag-in-jim-corbett-national-park.jpg?s=612x612&w=0&k=20&c=bQP1A1Cr16B-s1T1l5ZNZ4zE93pQxvdXwmQl3KWE5Cw="
+                        class="glightbox" data-gallery="resort-gallery" data-title="Loner Stag in Jim Corbett National Park">
+                        <img src="https://media.gettyimages.com/id/1141985754/photo/loner-stag-in-jim-corbett-national-park.jpg?s=612x612&w=0&k=20&c=bQP1A1Cr16B-s1T1l5ZNZ4zE93pQxvdXwmQl3KWE5Cw="
+                            class="rounded w-100 shadow-sm" alt="Luxury Suite">
+                    </a>
+                </div>
 
-								<div class="col-md-12">
-									<input type="submit" class="btn-check" value="Check Availability" />
-								</div>
-							</div>
-						</form>
-					</div>
-				</div>
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+                    <a href="https://media.gettyimages.com/id/1212910604/photo/ramganga-river-in-jim-corbett-national-park.jpg?s=612x612&w=0&k=20&c=C6nNEmOn7rsChU-3x0nQwpF6j8HL8Aa3u3C5x6L-a1U="
+                        class="glightbox" data-gallery="resort-gallery" data-title="Ramganga River View">
+                        <img src="https://media.gettyimages.com/id/1212910604/photo/ramganga-river-in-jim-corbett-national-park.jpg?s=612x612&w=0&k=20&c=C6nNEmOn7rsChU-3x0nQwpF6j8HL8Aa3u3C5x6L-a1U="
+                            class="rounded w-100 shadow-sm" alt="Evening View">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-				<div class="col-md-7 col-md-offset-1 col-sm-8">
-					<div class="main-title">
-						<h2>Contact Us</h2>
-						<p>Planning a trip and reviewing resorts, and need more information on Starinn?</p>
-					</div>
 
-					<div class="row">
-						<div class="col-md-6">
-							<div class="contactinfo-single">
-								<h3 class="address">Address</h3>
-								<p>Bhawar Chilkiya, Kyaari Bandobasti<br />
-									Jim Corbett, Nainital<br />
-									Pincode 244715</p>
-							</div>
-						</div>
 
-						<div class="col-md-6">
-							<div class="contactinfo-single">
-								<h3 class="email">Email</h3>
-								<p>info@starinnsuitesandretreat.com<br />
-									booking@starinnsuitesandretreat.com<br />
-									enquiry@starinnsuitesandretreat.com<br />
-								</p>
-							</div>
-						</div>
+    <!----BLOG HERE-->
+    <!-- BLOG / NEWS SECTION -->
+    <section id="blog" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="fw-bold">Latest Holiday Experiences</h2>
+                <p class="text-muted">Explore our recent blogs and travel inspirations</p>
+            </div>
 
-						<div class="col-md-6">
-							<div class="contactinfo-single">
-								<h3 class="address">Address</h3>
-								<p>Bhawar Chilkiya, Kyaari Bandobasti<br />
-									Jim Corbett, Nainital<br />
-									Pincode 244715</p>
-							</div>
-						</div>
+            <div class="row g-4">
+                <!-- Post 1 -->
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="https://starinnsuitesandretreat.com/wp-content/uploads/2016/09/15511656641425.jpg"
+                            class="card-img-top" alt="Handpicked Hotels">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <a href="https://starinnsuitesandretreat.com/food/handpicked-hotels/"
+                                    class="text-decoration-none text-dark fw-semibold">
+                                    Handpicked Hotels
+                                </a>
+                            </h5>
+                            <p class="card-text small text-muted mb-3">
+                                Having a vacation with your family and touring around the world will be one of the best
+                                moments of the family’s history.
+                            </p>
+                            <div class="d-flex justify-content-between text-muted small">
+                                <span><i class="bi bi-calendar-event me-1"></i> September 11, 2016</span>
+                                <span><i class="bi bi-chat-dots me-1"></i> 0 Comments</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-						<div class="col-md-6">
-							<div class="contactinfo-single">
-								<h3 class="contact">Contact No.</h3>
-								<p>011 4025 4954 <br />
-								<p>011 4909 8176 </p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Mega Footer ends -->
+                <!-- Post 2 -->
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="https://starinnsuitesandretreat.com/wp-content/uploads/2020/12/005c_amsterdamcitytours_amsterdamcity3.jpg"
+                            class="card-img-top" alt="Premium City Tours">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <a href="https://starinnsuitesandretreat.com/food/premium-city-tours/"
+                                    class="text-decoration-none text-dark fw-semibold">
+                                    Premium City Tours
+                                </a>
+                            </h5>
+                            <p class="card-text small text-muted mb-3">
+                                Cultural and discovery holidays, cycling, trekking, winter activities, polar adventures,
+                                water sports, and family holidays.
+                            </p>
+                            <div class="d-flex justify-content-between text-muted small">
+                                <span><i class="bi bi-calendar-event me-1"></i> December 8, 2020</span>
+                                <span><i class="bi bi-chat-dots me-1"></i> 0 Comments</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-	<!-- Footer starts -->
-	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="siteinfo">
-						<p>Copyright &copy; Untitled. All rights reserved. Design By </p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<!-- Footer ends -->
+                <!-- Post 3 -->
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="https://starinnsuitesandretreat.com/wp-content/uploads/2020/12/family-holidays-olfvwg8eku6wdrr1zkre24dgvv17ajtqiudmwq7z28.jpg"
+                            class="card-img-top" alt="Diverse Holiday Packages">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <a href="https://starinnsuitesandretreat.com/food/diverse-holiday-packages/"
+                                    class="text-decoration-none text-dark fw-semibold">
+                                    Diverse Holiday Packages
+                                </a>
+                            </h5>
+                            <p class="card-text small text-muted mb-3">
+                                Romantic moments of love deserve sweet memories that can never be wiped away — discover
+                                our curated holiday packages.
+                            </p>
+                            <div class="d-flex justify-content-between text-muted small">
+                                <span><i class="bi bi-calendar-event me-1"></i> December 8, 2020</span>
+                                <span><i class="bi bi-chat-dots me-1"></i> 0 Comments</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<!-- Jquery Library File -->
-	<script src="js/jquery-1.12.4.min.js"></script>
-	<!-- SmoothScroll -->
-	<script src="js/SmoothScroll.js"></script>
-	<!-- Bootstrap js file -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Counterup js file -->
-	<script src="js/waypoints.min.js"></script>
-	<script src="js/jquery.counterup.min.js"></script>
-	<!-- Isotop js file -->
-	<script src="js/isotope.min.js"></script>
-	<!-- Slick Nav js file -->
-	<script src="js/jquery.slicknav.js"></script>
-	<!-- Magnific Popup js file -->
-	<script src="js/jquery.magnific-popup.js"></script>
-	<!-- Owl Carousel js file -->
-	<script src="js/owl.carousel.js"></script>
-	<!-- Main Custom js file -->
-	<script src="js/function.js"></script>
+
+
+    <!-- ABOUT -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="h3">About STARINN Kyari Resort</h2>
+                    <h3 class="h4">Best Place to Enjoy Your Holidays</h3>
+                    <p class="text-muted">We believe customers are the bedrock of our business. Our mission is to serve
+                        our customers with high-quality holiday products and experiences they can cherish for the rest
+                        of their lives.</p>
+                    <p class="text-muted">A full range of our specialty services includes member-exclusive clubbing
+                        hubs, splendid holiday destinations, state-of-the-art fitness centers, and star-studded
+                        entertainment events. Give us a chance to delight you with our offerings. Our massive network
+                        consists of social clubs in urban hotspots, city-centric luxurious hotels, serene wellness
+                        rejuvenation hubs, beachfront resorts, hilltop vacation homes, wildlife jungle lodges, and water
+                        amusement parks. Also, the network frequently organizes various family amusement events
+                        including Live Musical Nights, Food Festivals, Magic Shows, and Tambola.</p>
+                    <ul class="list-unstyled small text-muted">
+                        <li><i class="bi bi-check2-circle text-success me-2"></i> Family-friendly rooms & kids'
+                            activities</li>
+                        <li><i class="bi bi-check2-circle text-success me-2"></i> 24/7 front desk & concierge</li>
+                        <li><i class="bi bi-check2-circle text-success me-2"></i> Sustainable & local-sourcing practices
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=60"
+                        class="img-fluid rounded" alt="about">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="h3 mb-4">Contact & Location</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <label class="form-label">Name</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Message</label>
+                            <textarea class="form-control" rows="4" required></textarea>
+                        </div>
+                        <button class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card p-3 shadow-sm">
+                        <h6>Address</h6>
+                        <p class="small text-muted">Bhawar Chilkiya, Kyaari Bandobasti,
+                            Jim Corbett, Nainital, India</p>
+                        <h6>Phone</h6>
+                        <p class="small text-muted">+011 4025 4954</p>
+                        <h6>Email</h6>
+                        <p class="small text-muted">info@starinnsuitesandretreat.com</p>
+                        <div class="mt-3">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15000!2d79.1850280!3d29.3680150!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sMy%20Resort%20Nainital!5e0!3m2!1sen!2sin!4v1730668746556!5m2!1sen!2sin"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-4">
+        <div class="container d-md-flex justify-content-between align-items-center">
+            <div class="mb-3 mb-md-0">
+                <strong>© <span id="year"></span> STARINN Kyari Resort</strong>
+                <div class="small text-muted">Designed with Bootstrap 5</div>
+            </div>
+            <div>
+                <a class="text-white me-3" href="#"><i class="bi bi-facebook"></i></a>
+                <a class="text-white me-3" href="#"><i class="bi bi-instagram"></i></a>
+                <a class="text-white" href="#"><i class="bi bi-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOOKING MODAL -->
+    <div class="modal fade" id="bookingModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Book Your Stay</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="bookingForm">
+                        <div class="mb-3">
+                            <label class="form-label">Full name</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="row g-2">
+                            <div class="col-6 mb-3">
+                                <label class="form-label">Check-in</label>
+                                <input type="date" class="form-control" required>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <label class="form-label">Check-out</label>
+                                <input type="date" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Room type</label>
+                            <select class="form-select" required>
+                                <option value="">Choose...</option>
+                                <option>Deluxe</option>
+                                <option>Executive Suite</option>
+                                <option>Private Villa</option>
+                            </select>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <button class="btn btn-secondary me-2" data-bs-dismiss="modal">Cancel</button>
+                            <button class="btn btn-primary" type="submit">Request Booking</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // small helpers
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // simple form handlers (demo only)
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Thanks — message sent (demo only)');
+            this.reset();
+        });
+        document.getElementById('bookingForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Booking request submitted (demo only). We will contact you.');
+            var modalEl = document.getElementById('bookingModal');
+            var modal = bootstrap.Modal.getInstance(modalEl);
+            modal.hide();
+            this.reset();
+        });
+
+    </script>
+
+    <!-- Animate On Scroll JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true, duration: 800, offset: 100 });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const lightbox = GLightbox({
+                selector: ".glightbox",
+                touchNavigation: true,
+                loop: true,
+                zoomable: true,
+                autoplayVideos: false
+            });
+        });
+    </script>
 </body>
-
-<!-- Mirrored from html.awaikenthemes.com/the-grand-hotel-and-resort-site-template/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 12 Oct 2025 03:08:30 GMT -->
 
 </html>
