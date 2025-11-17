@@ -35,34 +35,35 @@
     <!-- ✅ Favicon -->
     <link rel="icon" href="https://starinnkyarijungle.com/images/favicon.ico" type="image/x-icon">
 
-    <!-- ✅ Structured Data (JSON-LD Schema for Resort/Hotel) -->
+    <!-- ✅ Corrected Structured Data (JSON-LD Schema for Resort/Hotel) -->
     <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Resort",
-    "name": "StarInn Kyari Jungle Resort",
-    "image": "https://starinnkyarijungle.com/images/bg/resort-banner.jpg",
-    "description": "Luxury jungle resort located near Jim Corbett National Park offering stays, safaris, and nature experiences.",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Kyari Village, Ramnagar",
-      "addressLocality": "Jim Corbett National Park",
-      "addressRegion": "Uttarakhand",
-      "postalCode": "244715",
-      "addressCountry": "IN"
-    },
+{
+  "@context": "https://schema.org",
+  "@type": "Resort",
+  "name": "StarInn Kyari Jungle Resort",
+  "image": "https://starinnkyarijungle.com/images/bg/resort-banner.jpg",
+  "description": "Luxury jungle resort located near Jim Corbett National Park offering stays, safaris, and nature experiences.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Kyari Village, Ramnagar",
+    "addressLocality": "Jim Corbett National Park",
+    "addressRegion": "Uttarakhand",
+    "postalCode": "244715",
+    "addressCountry": "IN"
+  },
   "geo": {
     "@type": "GeoCoordinates",
     "latitude": 29.3680150,
     "longitude": 79.1850280
   },
-    "telephone": "011-4909-8176",
-    "url": "https://starinnkyarijungle.com/",
-    "email": "info@starinnkyari.com",
-    "hasMap": "https://www.google.com/maps?q=29.3680150,79.1850280",
-    "priceRange": "₹3,499 - ₹14,999 per night",
-  }
-  </script>
+  "telephone": "011-4909-8176",
+  "url": "https://starinnkyarijungle.com/",
+  "email": "info@starinnkyarijungle.com",
+  "hasMap": "https://www.google.com/maps?q=29.3680150,79.1850280",
+  "priceRange": "₹9,999 - ₹14,999 per night"
+}
+</script>
+    <!-- ✅ End of Structured Data -->
 
     <!-- Bootstrap 5 CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -153,6 +154,7 @@
                     <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#rooms">Rooms</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
                     <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
@@ -186,13 +188,13 @@
 
     <header id="home" class="hero text-center">
         <!-- GIF background (instead of video) -->
-        <img src="images/bg/starinn.gif"
-            alt="STARINN Kyari Resort"
+        <img src="images/bg/starinn.gif" alt="STARINN Kyari Resort"
             style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;">
 
         <!-- overlay content -->
         <div class="container" style="position:relative;z-index:1;">
-            <h1 class="display-4 fw-bold" data-aos="zoom-in" data-aos-delay="200">Welcome to STARINN Kyari Jungle Resort</h1>
+            <h1 class="display-4 fw-bold" data-aos="zoom-in" data-aos-delay="200">Welcome to STARINN Kyari Jungle Resort
+            </h1>
             <!-- <p class="lead" data-aos="fade-up" data-aos-delay="400">Luxury suites, peaceful retreats & unforgettable experiences</p> -->
             <div class="mt-4" data-aos="fade-up" data-aos-delay="600">
                 <a class="btn btn-warning btn-lg me-2" href="#rooms">View Rooms</a>
@@ -289,6 +291,76 @@
 
 
 
+            </div>
+        </div>
+    </section>
+
+       <!-- PRICING / TARIFF SECTION -->
+    <section id="pricing" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="h3 fw-bold">Room Tariff</h2>
+                <!-- <p class="text-muted">All prices exclude GST</p> -->
+            </div>
+
+            <div class="row g-4">
+                <!-- Studio -->
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="card h-100 shadow-sm border-0 text-center">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold mb-3">Studio</h5>
+                            <div class="pricing-amount mb-3">
+                                <span class="display-6 fw-bold text-primary">₹10,000</span>
+                                <p class="small text-muted mb-0">per night (excl. GST)</p>
+                            </div>
+                            <ul class="list-unstyled small text-muted mb-4">
+                                <li><i class="bi bi-check2-circle text-success me-2"></i>Comfortable stay</li>
+                                <li><i class="bi bi-check2-circle text-success me-2"></i>Modern amenities</li>
+                                <li><i class="bi bi-check2-circle text-success me-2"></i>Wifi & AC</li>
+                            </ul>
+                            <button class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plunge Pool Room -->
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="card h-100 shadow-lg border-0 text-center position-relative">
+                        <div class="badge bg-warning position-absolute top-0 start-50 translate-middle mt-3">Popular</div>
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold mb-3">Plunge Pool Room</h5>
+                            <div class="pricing-amount mb-3">
+                                <span class="display-6 fw-bold text-primary">₹12,000</span>
+                                <p class="small text-muted mb-0">per night (excl. GST)</p>
+                            </div>
+                            <ul class="list-unstyled small text-muted mb-4">
+                                <li><i class="bi bi-check2-circle text-success me-2"></i>Private plunge pool</li>
+                                <li><i class="bi bi-check2-circle text-success me-2"></i>Luxury furnishings</li>
+                                <li><i class="bi bi-check2-circle text-success me-2"></i>Premium amenities</li>
+                            </ul>
+                            <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Duplex -->
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="card h-100 shadow-sm border-0 text-center">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold mb-3">Duplex</h5>
+                            <div class="pricing-amount mb-3">
+                                <span class="display-6 fw-bold text-primary">₹15,000</span>
+                                <p class="small text-muted mb-0">per night (excl. GST)</p>
+                            </div>
+                            <ul class="list-unstyled small text-muted mb-4">
+                                <li><i class="bi bi-check2-circle text-success me-2"></i>Spacious duplex suite</li>
+                                <li><i class="bi bi-check2-circle text-success me-2"></i>Separate living area</li>
+                                <li><i class="bi bi-check2-circle text-success me-2"></i>Full luxury experience</li>
+                            </ul>
+                            <button class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Now</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -586,7 +658,7 @@
                     <section id="contact2" class="py-5 bg-light">
                         <div class="container text-center">
                             <h2 class="h3 mb-3">StarInn Kyari Jungle Resort</h2>
-                            <p>Kyari Village, Near Jim Corbett National Park, Uttarakhand</p>
+                            <p>Village Kyari, Near Jim Corbett National Park, Uttarakhand</p>
 
                             <div class="d-flex justify-content-center gap-2 mt-3">
                                 <a href="https://www.google.com/maps?q=29.3680150,79.1850280" class="btn btn-success"
@@ -604,12 +676,12 @@
                 <div class="col-lg-6">
                     <div class="card p-3 shadow-sm">
                         <h6>Address</h6>
-                        <p class="small text-muted">Bhawar Chilkiya, Kyaari Bandobasti,
+                        <p class="small text-muted">Village Kyari,
                             Jim Corbett, Nainital, India</p>
                         <h6>Phone</h6>
                         <p class="small text-muted">+011 4025 4954</p>
                         <h6>Email</h6>
-                        <p class="small text-muted">info@starinnsuitesandretreat.com</p>
+                        <p class="small text-muted">info@starinnkyarijungle.com</p>
                         <div class="mt-3">
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15000!2d79.1850280!3d29.3680150!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sMy%20Resort%20Nainital!5e0!3m2!1sen!2sin!4v1730668746556!5m2!1sen!2sin"
@@ -729,6 +801,8 @@
             </div>
         </div>
     </div>
+
+ 
 
     <!-- SCRIPTS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
